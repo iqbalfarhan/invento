@@ -1,6 +1,7 @@
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Sidebar from "@/components/sidebar";
+import Navbar from "@/components/navbar";
 
 const inter = Montserrat({
     weight: "500",
@@ -17,13 +18,16 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en">
             <body className={inter.className}>
-                <div className="drawer lg:drawer-open">
+                <div className="drawer lg:drawer-open bg-pink-100">
                     <input
                         id="my-drawer-2"
                         type="checkbox"
                         className="drawer-toggle"
                     />
-                    <div className="drawer-content flex flex-col items-center justify-center">
+                    <div className="drawer-content flex flex-col p-4 pl-0">
+                        <div className="">
+                            <Navbar />
+                        </div>
                         {children}
                     </div>
                     <div className="drawer-side">

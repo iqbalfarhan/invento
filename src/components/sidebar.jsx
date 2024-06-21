@@ -6,7 +6,7 @@ const Item = ({ label = "Menu label", href = "/", icon }) => {
     const newicon = cloneElement(icon, { className: "size-5" });
     return (
         <li>
-            <Link href={href}>
+            <Link href={href} className="font-bold">
                 {newicon}
                 <span>{label}</span>
             </Link>
@@ -25,7 +25,7 @@ const Group = ({ title = "Menu label", children }) => {
 
 const Sidebar = () => {
     return (
-        <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content space-y-6">
+        <ul className="menu p-4 w-80 min-h-full bg-pink-200 text-base-content space-y-6 rounded-3xl shadow-xl">
             <Group title="Dashboard">
                 <Item label="Dashboard" href="/" icon={<LayoutDashboard />} />
             </Group>
