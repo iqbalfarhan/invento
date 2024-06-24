@@ -9,8 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "formik": "^2.4.6",
     "lucide-react": "^0.396.0",
     "next": "14.2.4",
+    "nookies": "^2.5.2",
     "react": "^18",
     "react-dom": "^18",
     "tailwind-scrollbar-hide": "^1.1.7"

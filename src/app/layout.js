@@ -2,6 +2,7 @@ import { Montserrat } from 'next/font/google';
 import './globals.css';
 import Sidebar from '@/components/sidebar';
 import Navbar from '@/components/navbar';
+import { AuthProvider } from '@/context/AuthContext';
 
 const montserrat = Montserrat({
   weight: '500',

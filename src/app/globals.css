@@ -4,16 +4,28 @@
 
 @layer base {
   html {
-    @apply !font-black;
+    @apply scrollbar-hide;
+  }
+  thead {
+    @apply bg-base-200/30 border-b-4 border-base-300;
+  }
+  input {
+    @apply input;
   }
 }
 
 @layer components {
+  .partial {
+    @apply bg-base-100 border-base-300;
+  }
   .auth-wrapper {
     @apply h-screen flex flex-col space-y-10 items-center justify-center bg-base-200;
   }
   .page-wrapper {
     @apply container w-full max-w-5xl mx-auto space-y-6 p-6;
+  }
+  .table-wrapper {
+    @apply overflow-x-auto border-2 border-base-300 rounded-lg bg-base-100;
   }
   .card {
     @apply bg-base-100;

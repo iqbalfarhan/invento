@@ -4,7 +4,7 @@ import React from 'react';
 
 const MainLayout = ({ children }) => {
   return (
-    <div className="drawer lg:drawer-open">
+    <div className="drawer lg:drawer-open bg-base-200">
       <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col">
         <div className="">

@@ -1,5 +1,6 @@
 import { BoxIcon } from 'lucide-react';
 import { List } from 'lucide-react';
+import { Users } from 'lucide-react';
 import { Book } from 'lucide-react';
 import { LogOut, UserCircle, LayoutDashboard } from 'lucide-react';
 import Link from 'next/link';
@@ -28,11 +29,14 @@ const Group = ({ title = 'Menu label', children }) => {
 
 const Sidebar = () => {
   return (
-    <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content space-y-6">
+    <ul className="menu p-4 w-80 min-h-full partial border-r-2 text-base-content space-y-6">
       <Group title="Dashboard">
         <Item label="Dashboard" href="/" icon={<LayoutDashboard />} />
         <Item label="Kategori" href="/kategori" icon={<List />} />
         <Item label="Inventory" href="/barang" icon={<BoxIcon />} />
+      </Group>
+      <Group title="Pengaturan">
+        <Item label="Pengaturan user" href="/profile" icon={<Users />} />
       </Group>
       <Group title="Edit Profile">
         <Item label="Edit Profile" href="/profile" icon={<UserCircle />} />
